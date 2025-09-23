@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Chess">
+      <UniqueIdentifier>{3B2EF60C-A742-1EBE-70C4-C11DDC971AEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{E70B220D-5320-4ABE-1CA2-ED1D887546EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{C0FF640D-2C14-8DBE-F595-301E616989EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{4E40957C-3A77-960D-E363-7C10CF79120F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{9C6AA017-8837-FB22-B150-E9CA9D7C30B1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Chess\ChessLayer.h">
+      <Filter>Chess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event\AppEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event\Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event\KeyboardEennt.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event\MouseEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\ImGuiLayer.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\App.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Input.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Layer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\LayerStack.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Log.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\TimeStep.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Window.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\Buffer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\OrthographicCamera.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\OrthographicCameraController.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\Renderer2D.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\RendererImpl.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\Shader.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\SubTexture.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\Texture.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\VertexArray.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chess\AssetsLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Chess\ChessLayer.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chess\main.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\ImGuiBuild.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\ImGuiLayer.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\App.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Input.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\LayerStack.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Log.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Window.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\Buffer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\OrthographicCamera.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\OrthographicCameraController.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\Renderer2D.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\RendererImpl.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\Shader.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\SubTexture.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\Texture.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\VertexArray.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chess\AssetsLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\ChessAssets\b_Bishop.png" />
+    <Image Include="Assets\Textures\ChessAssets\b_King.png" />
+    <Image Include="Assets\Textures\ChessAssets\b_Knight.png" />
+    <Image Include="Assets\Textures\ChessAssets\b_Pawn.png" />
+    <Image Include="Assets\Textures\ChessAssets\b_Queen.png" />
+    <Image Include="Assets\Textures\ChessAssets\b_Rook.png" />
+    <Image Include="Assets\Textures\ChessAssets\w_Bishop.png" />
+    <Image Include="Assets\Textures\ChessAssets\w_King.png" />
+    <Image Include="Assets\Textures\ChessAssets\w_Knight.png" />
+    <Image Include="Assets\Textures\ChessAssets\w_Pawn.png" />
+    <Image Include="Assets\Textures\ChessAssets\w_Queen.png" />
+    <Image Include="Assets\Textures\ChessAssets\w_Rook.png" />
+    <Image Include="Assets\Textures\board.png" />
+    <Image Include="Assets\Textures\Chess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Textures\ChessAssets.rar" />
+  </ItemGroup>
+</Project>

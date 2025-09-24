@@ -9,7 +9,7 @@ Ref<VertexBuffer> VertexBuffer::Create(uint32_t size)
 
 VertexBuffer::VertexBuffer(uint32_t size)
 {
-    glCreateBuffers(1, &m_RendererID);
+    glGenBuffers(1, &m_RendererID);
     glBindBuffer(GL_ARRAY_BUFFER, m_RendererID);
     glBufferData(GL_ARRAY_BUFFER, size, nullptr, GL_STATIC_DRAW);
 }
@@ -44,7 +44,7 @@ Ref<IndexBuffer> IndexBuffer::Create(uint32_t* indices, uint32_t count)
 
 IndexBuffer::IndexBuffer(uint32_t* indices, uint32_t count)
 {
-    glCreateBuffers(1, &m_RendererID);
+    glGenBuffers(1, &m_RendererID);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_RendererID);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, count * sizeof(uint32_t), indices, GL_STATIC_DRAW);
 }

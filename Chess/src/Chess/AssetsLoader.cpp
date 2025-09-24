@@ -2,6 +2,8 @@
 
 constexpr glm::vec2 SpriteSize = { 64,64 };
 
+std::unordered_map<PieceType, Ref<SubTexture2D>> AssetsLoader::m_PieceTextures;
+
 AssetsLoader::AssetsLoader()
 {
 }

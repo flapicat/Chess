@@ -6,8 +6,8 @@
 
 enum PieceType
 {
-	bKnight, bBishop, bRook, bQueen, bKing, bPawn,
-	wKnight, wBishop, wRook, wQueen, wKing, wPawn
+	bRook, bKnight, bBishop, bQueen, bKing, bPawn,
+	wRook, wKnight, wBishop, wQueen, wKing, wPawn
 };
 
 class AssetsLoader
@@ -17,8 +17,8 @@ public:
 	~AssetsLoader();
 
 	void LoadFromTileMap(Ref<Texture2D> m_Tilemap);
-	std::unordered_map<PieceType, Ref<SubTexture2D>>& GetPieceTextures() { return m_PieceTextures; }
+	static std::unordered_map<PieceType, Ref<SubTexture2D>>& GetPieceTextures() { return m_PieceTextures; }
 private:
-	std::unordered_map<PieceType, Ref<SubTexture2D>> m_PieceTextures;
+	static std::unordered_map<PieceType, Ref<SubTexture2D>> m_PieceTextures;
 };
 

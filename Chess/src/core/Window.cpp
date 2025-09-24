@@ -48,6 +48,9 @@ void Window::Create(const WindowProp& props)
 	{
 		LOG_ERROR("Failed to init GLFW!");
 	}
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	m_window = glfwCreateWindow(m_winData.Width, m_winData.Height, m_winData.Title.c_str(), nullptr, nullptr);
 	if (!m_window)

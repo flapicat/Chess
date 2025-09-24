@@ -15,13 +15,12 @@ IncludeDir["GLFW"] = "Chess/vendor/GLFW/include"
 IncludeDir["glad"] = "Chess/vendor/glad/include"
 IncludeDir["ImGui"] = "Chess/vendor/imgui"
 IncludeDir["glm"] = "Chess/vendor/glm"
-IncludeDir["stb"] = "Chess/vendor/stb/include"
+IncludeDir["stb"] = "Chess/vendor/stb"
 
 group "Dependencies"
 	include "Chess/vendor/GLFW"
 	include "Chess/vendor/glad"
 	include "Chess/vendor/imgui"
-	include "Chess/vendor/stb"
 group ""
 
 project "Chess"
@@ -58,7 +57,6 @@ project "Chess"
 		"GLFW",
 		"glad",
 		"ImGui",
-		"stb",
 		"opengl32.lib"
 	}
 

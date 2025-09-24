@@ -8,6 +8,7 @@
 #include "renderer/OrthographicCameraController.h"
 
 #include "AssetsLoader.h"
+#include "Board.h"
 
 class ChessLayer : public Layer
 {
@@ -22,12 +23,12 @@ public:
 	void OnImGuiRender();
 	void input();
 
-	void RenederPiece(const glm::vec3& pos, PieceType type);
 private:
 	AssetsLoader m_AssetLoader;
 	OrthographicCameraController m_CamControl;
 	Ref<Texture2D> m_BoardTexture;
 	Ref<Texture2D> m_TileMapTexture;
 	Ref<SubTexture2D> m_King;
+	Board m_Board;
 };
 

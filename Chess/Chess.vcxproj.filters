@@ -18,6 +18,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Chess\AssetsLoader.h">
+      <Filter>Chess</Filter>
+    </ClInclude>
     <ClInclude Include="src\Chess\ChessLayer.h">
       <Filter>Chess</Filter>
     </ClInclude>
@@ -87,9 +90,14 @@
     <ClInclude Include="src\renderer\VertexArray.h">
       <Filter>renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Chess\AssetsLoader.h" />
+    <ClInclude Include="vendor\stb\stb_image.h" />
+    <ClInclude Include="src\Chess\Board.h" />
+    <ClInclude Include="src\Chess\Piece.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Chess\AssetsLoader.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
     <ClCompile Include="src\Chess\ChessLayer.cpp">
       <Filter>Chess</Filter>
     </ClCompile>
@@ -144,25 +152,8 @@
     <ClCompile Include="src\renderer\VertexArray.cpp">
       <Filter>renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\Chess\AssetsLoader.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Assets\Textures\ChessAssets\b_Bishop.png" />
-    <Image Include="Assets\Textures\ChessAssets\b_King.png" />
-    <Image Include="Assets\Textures\ChessAssets\b_Knight.png" />
-    <Image Include="Assets\Textures\ChessAssets\b_Pawn.png" />
-    <Image Include="Assets\Textures\ChessAssets\b_Queen.png" />
-    <Image Include="Assets\Textures\ChessAssets\b_Rook.png" />
-    <Image Include="Assets\Textures\ChessAssets\w_Bishop.png" />
-    <Image Include="Assets\Textures\ChessAssets\w_King.png" />
-    <Image Include="Assets\Textures\ChessAssets\w_Knight.png" />
-    <Image Include="Assets\Textures\ChessAssets\w_Pawn.png" />
-    <Image Include="Assets\Textures\ChessAssets\w_Queen.png" />
-    <Image Include="Assets\Textures\ChessAssets\w_Rook.png" />
-    <Image Include="Assets\Textures\board.png" />
-    <Image Include="Assets\Textures\Chess.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Textures\ChessAssets.rar" />
+    <ClCompile Include="vendor\stb\stb_image.cpp" />
+    <ClCompile Include="src\Chess\Board.cpp" />
+    <ClCompile Include="src\Chess\Piece.cpp" />
   </ItemGroup>
 </Project>

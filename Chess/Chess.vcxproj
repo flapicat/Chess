@@ -97,10 +97,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Chess\Piece.h" />
-    <ClInclude Include="src\Chess\Board.h" />
     <ClInclude Include="src\Chess\AssetsLoader.h" />
+    <ClInclude Include="src\Chess\Board.h" />
     <ClInclude Include="src\Chess\ChessLayer.h" />
+    <ClInclude Include="src\Chess\Piece.h" />
     <ClInclude Include="src\Event\AppEvent.h" />
     <ClInclude Include="src\Event\Event.h" />
     <ClInclude Include="src\Event\KeyboardEennt.h" />
@@ -126,10 +126,10 @@
     <ClInclude Include="vendor\stb\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Chess\Piece.cpp" />
-    <ClCompile Include="src\Chess\Board.cpp" />
     <ClCompile Include="src\Chess\AssetsLoader.cpp" />
+    <ClCompile Include="src\Chess\Board.cpp" />
     <ClCompile Include="src\Chess\ChessLayer.cpp" />
+    <ClCompile Include="src\Chess\Piece.cpp" />
     <ClCompile Include="src\Chess\main.cpp" />
     <ClCompile Include="src\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\ImGui\ImGuiLayer.cpp" />

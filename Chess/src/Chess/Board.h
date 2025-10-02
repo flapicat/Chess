@@ -3,8 +3,9 @@
 #include <core/core.h>
 #include "renderer/Texture.h"
 #include "AssetsLoader.h"
+#include "Piece.h"
 
-static PieceType GetPieceTypeFromString(const std::string& pts);
+static Ref<Piece> GetPieceTypeFromString(const std::string& pts);
 
 class Board
 {
@@ -14,9 +15,10 @@ public:
 
 	void CreateBoard();
 	void RenderBoard();
-	void RenederPiece(const glm::vec3& pos, PieceType type);
+	void RenderPiece(const Ref<Piece>& piece);
 private:
 	std::array<std::string, 64> m_BoardMap = {};
+	std::vector<Ref<Piece>> m_Pieces = {};
 	Ref<Texture2D> m_Texture;
 };
 

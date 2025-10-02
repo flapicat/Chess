@@ -4,11 +4,7 @@
 #include "renderer/Texture.h"
 #include "renderer/SubTexture.h"
 
-enum PieceType
-{
-	bRook, bKnight, bBishop, bQueen, bKing, bPawn,
-	wRook, wKnight, wBishop, wQueen, wKing, wPawn
-};
+#include "Piece.h"
 
 class AssetsLoader
 {

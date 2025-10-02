@@ -22,9 +22,9 @@ void AssetsLoader::LoadFromTileMap(Ref<Texture2D> m_Tilemap)
 
             PieceType type;
             if (j == 0) // white pieces
-                type = static_cast<PieceType>(i);
+                type = static_cast<PieceType>(i+1);
             else        // black pieces
-                type = static_cast<PieceType>(i + 6);
+                type = static_cast<PieceType>(i + 7);
 
             m_PieceTextures[type] = m_subTex;
         }

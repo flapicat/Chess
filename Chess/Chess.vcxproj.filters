@@ -21,7 +21,13 @@
     <ClInclude Include="src\Chess\AssetsLoader.h">
       <Filter>Chess</Filter>
     </ClInclude>
+    <ClInclude Include="src\Chess\Board.h">
+      <Filter>Chess</Filter>
+    </ClInclude>
     <ClInclude Include="src\Chess\ChessLayer.h">
+      <Filter>Chess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chess\Piece.h">
       <Filter>Chess</Filter>
     </ClInclude>
     <ClInclude Include="src\Event\AppEvent.h">
@@ -91,14 +97,18 @@
       <Filter>renderer</Filter>
     </ClInclude>
     <ClInclude Include="vendor\stb\stb_image.h" />
-    <ClInclude Include="src\Chess\Board.h" />
-    <ClInclude Include="src\Chess\Piece.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Chess\AssetsLoader.cpp">
       <Filter>Chess</Filter>
     </ClCompile>
+    <ClCompile Include="src\Chess\Board.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
     <ClCompile Include="src\Chess\ChessLayer.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chess\Piece.cpp">
       <Filter>Chess</Filter>
     </ClCompile>
     <ClCompile Include="src\Chess\main.cpp">
@@ -153,7 +163,5 @@
       <Filter>renderer</Filter>
     </ClCompile>
     <ClCompile Include="vendor\stb\stb_image.cpp" />
-    <ClCompile Include="src\Chess\Board.cpp" />
-    <ClCompile Include="src\Chess\Piece.cpp" />
   </ItemGroup>
 </Project>
